@@ -1,0 +1,220 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  email    String   @unique
+  password String
+  name     String
+  phone    String?
+  role     UserRole @default(GUEST)
+
+  trafficLights TrafficLight[]
+  fines         Fine[]
+  evacuations   Evacuation[]
+  incidents     Incident[]
+  news          News[]
+  documents     Document[]
+
+  @@map("users")
+}
+
+model TrafficLight {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  address       String
+  type          TrafficLightType
+  installDate   DateTime         @map("install_date")
+  status        DeviceStatus     @default(ACTIVE)
+  latitude      Float?
+  longitude     Float?
+  lastMaintenance DateTime?      @map("last_maintenance")
+
+  user   User? @relation(fields: [userId], references: [id])
+  userId Int?  @map("user_id")
+
+  @@map("traffic_lights")
+}
+
+model Fine {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  violationType String   @map("violation_type")
+  amount        Int
+  date          DateTime
+  location      String
+  vehicleNumber String?  @map("vehicle_number")
+  status        FineStatus @default(PENDING)
+
+  user   User? @relation(fields: [userId], references: [id])
+  userId Int?  @map("user_id")
+
+  @@map("fines")
+}
+
+model Evacuation {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  date          DateTime
+  location      String
+  vehicleNumber String   @map("vehicle_number")
+  reason        String
+  cost          Int?
+  status        EvacuationStatus @default(PENDING)
+
+  user   User? @relation(fields: [userId], references: [id])
+  userId Int?  @map("user_id")
+
+  @@map("evacuations")
+}
+
+model Incident {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  type        IncidentType
+  date        DateTime
+  location    String
+  description String
+  severity    IncidentSeverity @default(LOW)
+  status      IncidentStatus   @default(OPEN)
+  latitude    Float?
+  longitude   Float?
+
+  user   User? @relation(fields: [userId], references: [id])
+  userId Int?  @map("user_id")
+
+  @@map("incidents")
+}
+
+model News {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  title       String
+  content     String
+  excerpt     String?
+  imageUrl    String? @map("image_url")
+  published   Boolean @default(false)
+  publishDate DateTime? @map("publish_date")
+
+  author   User @relation(fields: [authorId], references: [id])
+  authorId Int  @map("author_id")
+
+  @@map("news")
+}
+
+model Document {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  title       String
+  description String?
+  fileName    String   @map("file_name")
+  filePath    String   @map("file_path")
+  fileSize    Int      @map("file_size")
+  fileType    String   @map("file_type")
+  category    DocumentCategory
+
+  author   User @relation(fields: [authorId], references: [id])
+  authorId Int  @map("author_id")
+
+  @@map("documents")
+}
+
+model Statistics {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  date           DateTime
+  finesCount     Int      @map("fines_count")
+  finesAmount    Int      @map("fines_amount")
+  evacuationsCount Int    @map("evacuations_count")
+  incidentsCount Int      @map("incidents_count")
+  trafficLightsActive Int @map("traffic_lights_active")
+
+  @@map("statistics")
+}
+
+enum UserRole {
+  GUEST
+  EDITOR
+  ADMIN
+}
+
+enum TrafficLightType {
+  STANDARD
+  PEDESTRIAN
+  ARROW
+  SMART
+}
+
+enum DeviceStatus {
+  ACTIVE
+  INACTIVE
+  MAINTENANCE
+  BROKEN
+}
+
+enum FineStatus {
+  PENDING
+  PAID
+  CANCELLED
+  OVERDUE
+}
+
+enum EvacuationStatus {
+  PENDING
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}
+
+enum IncidentType {
+  ACCIDENT
+  ROAD_DAMAGE
+  TRAFFIC_JAM
+  EMERGENCY
+  MAINTENANCE
+}
+
+enum IncidentSeverity {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+enum IncidentStatus {
+  OPEN
+  IN_PROGRESS
+  RESOLVED
+  CLOSED
+}
+
+enum DocumentCategory {
+  REGULATION
+  REPORT
+  INSTRUCTION
+  BUDGET
+  OTHER
+}
