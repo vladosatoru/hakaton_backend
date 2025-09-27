@@ -5,10 +5,12 @@ import {
 } from '@nestjs/common'
 import { PrismaService } from '../prisma.service'
 import { AuthDto } from './dto/auth.dto'
+import { RegisterDto } from './dto/register.dto'
 import { faker } from '@faker-js/faker'
 import * as bcrypt from 'bcrypt'
 import { JwtService } from '@nestjs/jwt'
 import { UserService } from '../user/user.service'
+import { UserRole } from '@prisma/client'
 
 @Injectable()
 export class AuthService {
@@ -18,7 +20,7 @@ export class AuthService {
 		private userService: UserService,
 	) {}
 
-	async register(dto: AuthDto) {
+	async register(dto: RegisterDto) {
 		const existUser = await this.userService.getByEmail(dto.email)
 
 		if (existUser) {
@@ -26,15 +28,28 @@ export class AuthService {
 		}
 		const user = await this.userService.create({
 			email: dto.email,
-			name: faker.person.firstName(),
-			phone: faker.phone.number('+7 (###) ###-##-##'),
+			name: dto.name,
+			phone: dto.phone || faker.phone.number('+7 (###) ###-##-##'),
 			password: await bcrypt.hash(dto.password, 5),
+			role: dto.role || UserRole.GUEST,
 		})
 		const tokens = await this.issueTokens(user.id)
 		return {
 			user: this.returnUserFields(user),
 			...tokens,
 		}
+	}
+
+	// Метод для быстрой регистрации (совместимость с существующим API)
+	async quickRegister(dto: AuthDto) {
+		const registerDto: RegisterDto = {
+			email: dto.email,
+			password: dto.password,
+			name: faker.person.firstName(),
+			phone: faker.phone.number('+7 (###) ###-##-##'),
+			role: UserRole.GUEST,
+		}
+		return this.register(registerDto)
 	}
 
 	private async issueTokens(userId: number) {
@@ -54,7 +69,11 @@ export class AuthService {
 		return {
 			id: user.id,
 			email: user.email,
+			name: user.name,
+			phone: user.phone,
 			role: user.role,
+			createdAt: user.createdAt,
+			updatedAt: user.updatedAt,
 		}
 	}
 
@@ -77,6 +96,26 @@ export class AuthService {
 			user: this.returnUserFields(user),
 			...tokens,
 		}
+	}
+
+	async getProfile(userId: number) {
+		const user = await this.userService.byId(userId)
+		return this.returnUserFields(user)
+	}
+
+	async getAllUsers() {
+		const users = await this.prisma.user.findMany({
+			select: {
+				id: true,
+				email: true,
+				name: true,
+				phone: true,
+				role: true,
+				createdAt: true,
+				updatedAt: true,
+			},
+		})
+		return users
 	}
 
 	private async validateUser(dto: AuthDto) {

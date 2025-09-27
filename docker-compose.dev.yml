@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  # База данных PostgreSQL для разработки
+  postgres-dev:
+    image: postgres:15-alpine
+    container_name: codd-postgres-dev
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: hakaton_dev
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432"  # Другой порт для dev
+    volumes:
+      - postgres_dev_data:/var/lib/postgresql/data
+    networks:
+      - codd-dev-network
+
+  # Backend API для разработки
+  backend-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: codd-backend-dev
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: "postgresql://postgres:postgres@postgres-dev:5432/hakaton_dev"
+      JWT_SECRET: "dev-jwt-secret-key"
+      PORT: 4000
+      NODE_ENV: development
+      CORS_ORIGIN: "*"
+      MAX_FILE_SIZE: "10485760"
+      UPLOAD_DEST: "./uploads"
+    ports:
+      - "4001:4000"  # Другой порт для dev
+    depends_on:
+      - postgres-dev
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - ./uploads:/app/uploads
+    networks:
+      - codd-dev-network
+    command: >
+      sh -c "
+        npx prisma migrate deploy &&
+        npx ts-node seeder/seed.ts &&
+        npm run start:dev
+      "
+
+volumes:
+  postgres_dev_data:
+
+networks:
+  codd-dev-network:
+    driver: bridge

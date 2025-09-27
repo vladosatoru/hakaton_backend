@@ -1,10 +1,4 @@
-import {
-	IsBoolean,
-	IsDateString,
-	IsNumber,
-	IsOptional,
-	IsString,
-} from 'class-validator'
+import { IsString, IsOptional, IsBoolean, IsDateString, IsNumber } from 'class-validator'
 
 export class CreateNewsDto {
 	@IsString()

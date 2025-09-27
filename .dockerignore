@@ -1,0 +1,71 @@
+# Node modules
+node_modules
+npm-debug.log*
+
+# Build outputs
+dist
+build
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE files
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Docker files
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Test files
+test-*.js
+*.test.js
+*.spec.js
+
+# Documentation
+README.md
+DEPLOYMENT_GUIDE.md
+DEPLOY_README.md
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Uploads (will be mounted as volume)
+uploads/*
+
+# Temporary files
+tmp/
+temp/

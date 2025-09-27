@@ -1,0 +1,159 @@
+id,createdAt,updatedAt,registryNumber,address,lightType,installYear,status,latitude,longitude,lastMaintenance,isPublic
+1,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),1,ул. Большая Советская / ул. Ленина,Т.1,2018,ACTIVE,,,,true
+2,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),2,ул. Николаева / ул. Кашена,Т.2,2015,ACTIVE,,,,true
+3,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),3,пр-т Гагарина / ул. Багратиона,Т.3,2020,ACTIVE,,,,true
+4,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),4,ул. Дзержинского / ул. Маршала Конева,П.1,2021,ACTIVE,,,,true
+5,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),5,ул. Ново-Ленинградская / ул. Рыленкова,Т.7,2016,ACTIVE,,,,true
+6,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),6,ул. 2-я Краснинская / ул. Неверовского,П.2,2019,ACTIVE,,,,true
+7,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),7,ул. Кутузова / ул. Тенишевой,Т.1,2017,ACTIVE,,,,true
+8,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),8,ул. Бакунина / ул. Коненкова,Т.2,2022,ACTIVE,,,,true
+9,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),9,ул. Соболева / ул. Кирова,П.1,2018,ACTIVE,,,,true
+10,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),10,ул. Ленина / ул. Октябрьской Революции,Т.3,2020,ACTIVE,,,,true
+11,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),11,ул. Попова / ул. Румянцева,Т.1,2019,ACTIVE,,,,true
+12,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),12,ул. Урицкого / ул. Фурманова,П.2,2016,ACTIVE,,,,true
+13,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),13,ул. Чаплина / ул. Шевченко,Т.7,2021,ACTIVE,,,,true
+14,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),14,ул. Щорса / ул. Яблочкиной,Т.2,2017,ACTIVE,,,,true
+15,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),15,ул. Яковлева / ул. Барклая-де-Толли,П.1,2018,ACTIVE,,,,true
+16,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),16,ул. Глинки / ул. Дохтурова,Т.3,2020,ACTIVE,,,,true
+17,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),17,ул. Ефремова / ул. Жукова,Т.1,2019,ACTIVE,,,,true
+18,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),18,ул. Заслонова / ул. Исаковского,П.2,2015,ACTIVE,,,,true
+19,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),19,ул. Кловки / ул. Крупской,Т.2,2021,ACTIVE,,,,true
+20,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),20,ул. Лавочкина / ул. Матросова,Т.7,2018,ACTIVE,,,,true
+21,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),21,ул. Мира / ул. Нормандия-Неман,П.1,2020,ACTIVE,,,,true
+22,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),22,ул. Островского / ул. Парижской Коммуны,Т.3,2019,ACTIVE,,,,true
+23,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),23,ул. Парковая / ул. Первомайская,Т.1,2017,ACTIVE,,,,true
+24,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),24,ул. Победы / ул. Раевского,П.2,2022,ACTIVE,,,,true
+25,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),25,ул. Реадовская / ул. Рославльская,Т.2,2018,ACTIVE,,,,true
+26,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),26,ул. Русановская / ул. Смольянинова,Т.7,2020,ACTIVE,,,,true
+27,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),27,ул. Строителей / ул. Твардовского,П.1,2019,ACTIVE,,,,true
+28,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),28,ул. Тенистая / ул. Ударников,Т.3,2016,ACTIVE,,,,true
+29,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),29,ул. Фестивальная / ул. Халтурина,Т.1,2021,ACTIVE,,,,true
+30,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),30,ул. Циолковского / ул. Чайковского,П.2,2018,ACTIVE,,,,true
+31,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),31,ул. Школьная / ул. Щедрина,Т.2,2020,ACTIVE,,,,true
+32,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),32,ул. Юбилейная / ул. Якуба Коласа,Т.7,2019,ACTIVE,,,,true
+33,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),33,пр-т Строителей / ул. Академика Петрова,П.1,2017,ACTIVE,,,,true
+34,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),34,ул. Березовая / ул. Валовская,Т.3,2021,ACTIVE,,,,true
+35,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),35,ул. Верхне-Сенная / ул. Войкова,Т.1,2018,ACTIVE,,,,true
+36,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),36,ул. Гарабурды / ул. Гнездовская,П.2,2020,ACTIVE,,,,true
+37,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),37,ул. Деповская / ул. Днепровская,Т.2,2019,ACTIVE,,,,true
+38,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),38,ул. Железнодорожная / ул. Запольная,Т.7,2016,ACTIVE,,,,true
+39,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),39,ул. Индустриальная / ул. Каменная,П.1,2021,ACTIVE,,,,true
+40,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),40,ул. Кедрова / ул. Кольцевая,Т.3,2018,ACTIVE,,,,true
+41,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),41,ул. Кравченко / ул. Крестовоздвиженская,Т.1,2020,ACTIVE,,,,true
+42,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),42,ул. Крупской / ул. Ладожская,П.2,2019,ACTIVE,,,,true
+43,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),43,ул. Лесная / ул. Литейная,Т.2,2017,ACTIVE,,,,true
+44,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),44,ул. Ломоносова / ул. Майская,Т.7,2021,ACTIVE,,,,true
+45,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),45,ул. Малые Школьные / ул. Металлистов,П.1,2018,ACTIVE,,,,true
+46,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),46,ул. Можайского / ул. Мурманская,Т.3,2020,ACTIVE,,,,true
+47,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),47,ул. Набережная / ул. Новая,Т.1,2019,ACTIVE,,,,true
+48,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),48,ул. Одинцова / ул. Ольшанская,П.2,2016,ACTIVE,,,,true
+49,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),49,ул. Орловская / ул. Павлова,Т.2,2021,ACTIVE,,,,true
+50,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),50,ул. Перекопская / ул. Пионерская,Т.7,2018,ACTIVE,,,,true
+51,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),51,ул. Полевая / ул. Пригородная,П.1,2020,ACTIVE,,,,true
+52,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),52,ул. Пржевальского / ул. Промышленная,Т.3,2019,ACTIVE,,,,true
+53,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),53,ул. Пушкина / ул. Рабочая,Т.1,2017,ACTIVE,,,,true
+54,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),54,ул. Ржевская / ул. Садовая,П.2,2022,ACTIVE,,,,true
+55,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),55,ул. Свердлова / ул. Северная,Т.2,2018,ACTIVE,,,,true
+56,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),56,ул. Сенная / ул. Солнечная,Т.7,2020,ACTIVE,,,,true
+57,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),57,ул. Спортивная / ул. Ставропольская,П.1,2019,ACTIVE,,,,true
+58,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),58,ул. Строительная / ул. Суворова,Т.3,2016,ACTIVE,,,,true
+59,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),59,ул. Текстильная / ул. Трудовая,Т.1,2021,ACTIVE,,,,true
+60,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),60,ул. Угранская / ул. Успенского,П.2,2018,ACTIVE,,,,true
+61,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),61,ул. Фабрициуса / ул. Февральская,Т.2,2020,ACTIVE,,,,true
+62,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),62,ул. Фрунзе / ул. Хмельницкого,Т.7,2019,ACTIVE,,,,true
+63,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),63,ул. Цветочная / ул. Чапаева,П.1,2017,ACTIVE,,,,true
+64,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),64,ул. Чехова / ул. Шоссейная,Т.3,2021,ACTIVE,,,,true
+65,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),65,ул. Щербакова / ул. Энергетическая,Т.1,2018,ACTIVE,,,,true
+66,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),66,ул. Юбилейная / ул. Юности,П.2,2020,ACTIVE,,,,true
+67,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),67,ул. Ярмарочная / ул. Ясная,Т.2,2019,ACTIVE,,,,true
+68,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),68,пр-т Комсомольский / ул. Краснофлотская,Т.7,2017,ACTIVE,,,,true
+69,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),69,ул. Ломоносова / ул. Макаренко,П.1,2021,ACTIVE,,,,true
+70,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),70,ул. Нарвская / ул. Ново-Рославльская,Т.3,2018,ACTIVE,,,,true
+71,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),71,ул. Озерная / ул. Партизанская,Т.1,2020,ACTIVE,,,,true
+72,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),72,ул. Петра Алексеева / ул. Рабоче-Крестьянская,П.2,2019,ACTIVE,,,,true
+73,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),73,ул. Смоленская / ул. Социалистическая,Т.2,2016,ACTIVE,,,,true
+74,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),74,ул. Трудовая / ул. Урицкого,Т.7,2021,ACTIVE,,,,true
+75,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),75,ул. Фрунзе / ул. Халтурина,П.1,2018,ACTIVE,,,,true
+76,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),76,ул. Циолковского / ул. Чкалова,Т.3,2020,ACTIVE,,,,true
+77,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),77,ул. Шмидта / ул. Щорса,Т.1,2019,ACTIVE,,,,true
+78,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),78,ул. Энгельса / ул. Южная,П.2,2017,ACTIVE,,,,true
+79,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),79,ул. Якова Гумилевского / ул. 25 Сентября,Т.2,2022,ACTIVE,,,,true
+80,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),80,ул. Багратиона / ул. Большая Советская,Т.7,2018,ACTIVE,,,,true
+81,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),81,ул. Кашена / ул. Николаева,П.1,2020,ACTIVE,,,,true
+82,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),82,ул. Маршала Конева / ул. Дзержинского,Т.3,2019,ACTIVE,,,,true
+83,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),83,ул. Рыленкова / ул. Ново-Ленинградская,Т.1,2016,ACTIVE,,,,true
+84,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),84,ул. Неверовского / ул. 2-я Краснинская,П.2,2021,ACTIVE,,,,true
+85,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),85,ул. Тенишевой / ул. Кутузова,Т.2,2018,ACTIVE,,,,true
+86,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),86,ул. Коненкова / ул. Бакунина,Т.7,2020,ACTIVE,,,,true
+87,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),87,ул. Кирова / ул. Соболева,П.1,2019,ACTIVE,,,,true
+88,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),88,ул. Октябрьской Революции / ул. Ленина,Т.3,2017,ACTIVE,,,,true
+89,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),89,ул. Румянцева / ул. Попова,Т.1,2021,ACTIVE,,,,true
+90,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),90,ул. Фурманова / ул. Урицкого,П.2,2018,ACTIVE,,,,true
+91,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),91,ул. Шевченко / ул. Чаплина,Т.2,2020,ACTIVE,,,,true
+92,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),92,ул. Яблочкиной / ул. Щорса,Т.7,2019,ACTIVE,,,,true
+93,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),93,ул. Барклая-де-Толли / ул. Яковлева,П.1,2016,ACTIVE,,,,true
+94,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),94,ул. Дохтурова / ул. Глинки,Т.3,2021,ACTIVE,,,,true
+95,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),95,ул. Жукова / ул. Ефремова,Т.1,2018,ACTIVE,,,,true
+96,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),96,ул. Исаковского / ул. Заслонова,П.2,2020,ACTIVE,,,,true
+97,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),97,ул. Крупской / ул. Кловки,Т.2,2019,ACTIVE,,,,true
+98,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),98,ул. Матросова / ул. Лавочкина,Т.7,2017,ACTIVE,,,,true
+99,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),99,ул. Нормандия-Неман / ул. Мира,П.1,2021,ACTIVE,,,,true
+100,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),100,ул. Парижской Коммуны / ул. Островского,Т.3,2018,ACTIVE,,,,true
+101,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),101,ул. Первомайская / ул. Парковая,Т.1,2020,ACTIVE,,,,true
+102,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),102,ул. Раевского / ул. Победы,П.2,2019,ACTIVE,,,,true
+103,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),103,ул. Рославльская / ул. Реадовская,Т.2,2016,ACTIVE,,,,true
+104,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),104,ул. Смольянинова / ул. Русановская,Т.7,2021,ACTIVE,,,,true
+105,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),105,ул. Твардовского / ул. Строителей,П.1,2018,ACTIVE,,,,true
+106,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),106,ул. Ударников / ул. Тенистая,Т.3,2020,ACTIVE,,,,true
+107,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),107,ул. Халтурина / ул. Фестивальная,Т.1,2019,ACTIVE,,,,true
+108,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),108,ул. Чайковского / ул. Циолковского,П.2,2017,ACTIVE,,,,true
+109,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),109,ул. Щедрина / ул. Школьная,Т.2,2021,ACTIVE,,,,true
+110,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),110,ул. Якуба Коласа / ул. Юбилейная,Т.7,2018,ACTIVE,,,,true
+111,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),111,ул. Академика Петрова / пр-т Строителей,П.1,2020,ACTIVE,,,,true
+112,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),112,ул. Валовская / ул. Березовая,Т.3,2019,ACTIVE,,,,true
+113,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),113,ул. Войкова / ул. Верхне-Сенная,Т.1,2016,ACTIVE,,,,true
+114,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),114,ул. Гнездовская / ул. Гарабурды,П.2,2021,ACTIVE,,,,true
+115,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),115,ул. Днепровская / ул. Деповская,Т.2,2018,ACTIVE,,,,true
+116,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),116,ул. Запольная / ул. Железнодорожная,Т.7,2020,ACTIVE,,,,true
+117,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),117,ул. Каменная / ул. Индустриальная,П.1,2019,ACTIVE,,,,true
+118,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),118,ул. Кольцевая / ул. Кедрова,Т.3,2017,ACTIVE,,,,true
+119,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),119,ул. Крестовоздвиженская / ул. Кравченко,Т.1,2021,ACTIVE,,,,true
+120,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),120,ул. Ладожская / ул. Крупской,П.2,2018,ACTIVE,,,,true
+121,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),121,ул. Литейная / ул. Лесная,Т.2,2020,ACTIVE,,,,true
+122,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),122,ул. Майская / ул. Ломоносова,Т.7,2019,ACTIVE,,,,true
+123,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),123,ул. Металлистов / ул. Малые Школьные,П.1,2016,ACTIVE,,,,true
+124,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),124,ул. Мурманская / ул. Можайского,Т.3,2021,ACTIVE,,,,true
+125,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),125,ул. Новая / ул. Набережная,Т.1,2018,ACTIVE,,,,true
+126,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),126,ул. Ольшанская / ул. Одинцова,П.2,2020,ACTIVE,,,,true
+127,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),127,ул. Павлова / ул. Орловская,Т.2,2019,ACTIVE,,,,true
+128,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),128,ул. Пионерская / ул. Перекопская,Т.7,2017,ACTIVE,,,,true
+129,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),129,ул. Пригородная / ул. Полевая,П.1,2021,ACTIVE,,,,true
+130,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),130,ул. Промышленная / ул. Пржевальского,Т.3,2018,ACTIVE,,,,true
+131,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),131,ул. Рабочая / ул. Пушкина,Т.1,2020,ACTIVE,,,,true
+132,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),132,ул. Садовая / ул. Ржевская,П.2,2019,ACTIVE,,,,true
+133,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),133,ул. Северная / ул. Свердлова,Т.2,2016,ACTIVE,,,,true
+134,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),134,ул. Солнечная / ул. Сенная,Т.7,2021,ACTIVE,,,,true
+135,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),135,ул. Ставропольская / ул. Спортивная,П.1,2018,ACTIVE,,,,true
+136,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),136,ул. Суворова / ул. Строительная,Т.3,2020,ACTIVE,,,,true
+137,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),137,ул. Трудовая / ул. Текстильная,Т.1,2019,ACTIVE,,,,true
+138,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),138,ул. Успенского / ул. Угранская,П.2,2017,ACTIVE,,,,true
+139,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),139,ул. Февральская / ул. Фабрициуса,Т.2,2021,ACTIVE,,,,true
+140,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),140,ул. Хмельницкого / ул. Фрунзе,Т.7,2018,ACTIVE,,,,true
+141,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),141,ул. Чапаева / ул. Цветочная,П.1,2020,ACTIVE,,,,true
+142,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),142,ул. Шоссейная / ул. Чехова,Т.3,2019,ACTIVE,,,,true
+143,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),143,ул. Энергетическая / ул. Щербакова,Т.1,2016,ACTIVE,,,,true
+144,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),144,ул. Юности / ул. Юбилейная,П.2,2021,ACTIVE,,,,true
+145,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),145,ул. Ясная / ул. Ярмарочная,Т.2,2018,ACTIVE,,,,true
+146,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),146,ул. Краснофлотская / пр-т Комсомольский,Т.7,2020,ACTIVE,,,,true
+147,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),147,ул. Макаренко / ул. Ломоносова,П.1,2019,ACTIVE,,,,true
+148,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),148,ул. Ново-Рославльская / ул. Нарвская,Т.3,2017,ACTIVE,,,,true
+149,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),149,ул. Партизанская / ул. Озерная,Т.1,2021,ACTIVE,,,,true
+150,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),150,ул. Рабоче-Крестьянская / ул. Петра Алексеева,П.2,2018,ACTIVE,,,,true
+151,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),151,ул. Социалистическая / ул. Смоленская,Т.2,2020,ACTIVE,,,,true
+152,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),152,ул. Урицкого / ул. Трудовая,Т.7,2019,ACTIVE,,,,true
+153,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),153,ул. Халтурина / ул. Фрунзе,П.1,2016,ACTIVE,,,,true
+154,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),154,ул. Чкалова / ул. Циолковского,Т.3,2021,ACTIVE,,,,true
+155,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),155,ул. Щорса / ул. Шмидта,Т.1,2018,ACTIVE,,,,true
+156,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),156,ул. Южная / ул. Энгельса,П.2,2020,ACTIVE,,,,true
+157,Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),Thu Sep 25 2025 21:49:06 GMT+0300 (Moscow Standard Time),157,ул. 25 Сентября / ул. Якова Гумилевского,Т.2,2019,ACTIVE,,,,true
+315,Fri Sep 26 2025 16:52:43 GMT+0300 (Moscow Standard Time),Fri Sep 26 2025 16:52:43 GMT+0300 (Moscow Standard Time),999,ул. Тестовая / ул. Новая,Т.1,2024,ACTIVE,53.9045,27.5615,,true

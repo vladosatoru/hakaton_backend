@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: traffic-management-api
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start:prod
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: traffic-management-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: PORT
+        value: 10000
+
+databases:
+  - name: traffic-management-db
+    plan: free
+    databaseName: traffic_management
+    user: admin

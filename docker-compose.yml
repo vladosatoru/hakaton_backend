@@ -1,0 +1,69 @@
+version: '3.8'
+
+services:
+  # База данных PostgreSQL
+  postgres:
+    image: postgres:15-alpine
+    container_name: codd-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: hakaton
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - codd-network
+
+  # Backend API
+  backend:
+    build: .
+    container_name: codd-backend
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: "postgresql://postgres:postgres@postgres:5432/hakaton"
+      JWT_SECRET: "your-super-secret-jwt-key-change-in-production"
+      PORT: 4000
+      NODE_ENV: production
+      CORS_ORIGIN: "*"
+      MAX_FILE_SIZE: "10485760"
+      UPLOAD_DEST: "./uploads"
+    ports:
+      - "4000:4000"
+    depends_on:
+      - postgres
+    volumes:
+      - ./uploads:/app/uploads
+    networks:
+      - codd-network
+    command: >
+      sh -c "
+        npx prisma migrate deploy &&
+        npx ts-node seeder/seed.ts &&
+        npm run start:prod
+      "
+
+  # Nginx для reverse proxy (опционально)
+  nginx:
+    image: nginx:alpine
+    container_name: codd-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - backend
+    networks:
+      - codd-network
+
+volumes:
+  postgres_data:
+
+networks:
+  codd-network:
+    driver: bridge

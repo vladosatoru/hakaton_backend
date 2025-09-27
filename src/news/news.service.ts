@@ -14,9 +14,7 @@ export class NewsService {
 				excerpt: createNewsDto.summary,
 				imageUrl: createNewsDto.imageUrl,
 				published: createNewsDto.isPublished ?? false,
-				publishDate: createNewsDto.publishedAt
-					? new Date(createNewsDto.publishedAt)
-					: null,
+				publishDate: createNewsDto.publishedAt ? new Date(createNewsDto.publishedAt) : null,
 				authorId: createNewsDto.authorId,
 			},
 			include: {
@@ -33,7 +31,7 @@ export class NewsService {
 
 	async findAll(published?: boolean) {
 		const where = published !== undefined ? { published: published } : {}
-
+		
 		return this.prisma.news.findMany({
 			where,
 			include: {
@@ -83,9 +81,7 @@ export class NewsService {
 				excerpt: updateNewsDto.summary,
 				imageUrl: updateNewsDto.imageUrl,
 				published: updateNewsDto.isPublished,
-				publishDate: updateNewsDto.publishedAt
-					? new Date(updateNewsDto.publishedAt)
-					: existingNews.publishDate,
+				publishDate: updateNewsDto.publishedAt ? new Date(updateNewsDto.publishedAt) : existingNews.publishDate,
 			},
 			include: {
 				author: {

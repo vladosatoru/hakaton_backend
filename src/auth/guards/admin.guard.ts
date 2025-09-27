@@ -11,9 +11,9 @@ export class OnlyAdminGuard implements CanActivate {
 		const request = context.switchToHttp().getRequest<{ user: any }>()
 		const user = request.user
 
-		if (user.role !== 'admin') {
+		if (user.role !== 'ADMIN') {
 			throw new ForbiddenException("You don't have right! ")
 		}
-		return user.role === 'admin'
+		return user.role === 'ADMIN'
 	}
 }

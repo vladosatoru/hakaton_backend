@@ -1,20 +1,20 @@
 import {
-	Body,
 	Controller,
-	Delete,
 	Get,
-	Param,
-	ParseBoolPipe,
-	ParseIntPipe,
-	Patch,
 	Post,
-	Query,
+	Body,
+	Patch,
+	Param,
+	Delete,
 	UseGuards,
+	Query,
+	ParseIntPipe,
+	ParseBoolPipe,
 } from '@nestjs/common'
-import { OnlyAdminGuard } from '../auth/guards/admin.guard'
-import { JwtAuthGuard } from '../auth/guards/jwt.guard'
-import { CreateNewsDto, UpdateNewsDto } from './news.dto'
 import { NewsService } from './news.service'
+import { CreateNewsDto, UpdateNewsDto } from './news.dto'
+import { JwtAuthGuard } from '../auth/guards/jwt.guard'
+import { OnlyAdminGuard } from '../auth/guards/admin.guard'
 
 @Controller('news')
 export class NewsController {
@@ -27,10 +27,7 @@ export class NewsController {
 	}
 
 	@Get()
-	findAll(
-		@Query('published', new ParseBoolPipe({ optional: true }))
-		published?: boolean,
-	) {
+	findAll(@Query('published', new ParseBoolPipe({ optional: true })) published?: boolean) {
 		return this.newsService.findAll(published)
 	}
 
@@ -47,10 +44,7 @@ export class NewsController {
 
 	@Patch(':id')
 	@UseGuards(JwtAuthGuard, OnlyAdminGuard)
-	update(
-		@Param('id', ParseIntPipe) id: number,
-		@Body() updateNewsDto: UpdateNewsDto,
-	) {
+	update(@Param('id', ParseIntPipe) id: number, @Body() updateNewsDto: UpdateNewsDto) {
 		return this.newsService.update(id, updateNewsDto)
 	}
 

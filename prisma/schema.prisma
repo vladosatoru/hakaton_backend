@@ -24,6 +24,9 @@ model User {
   incidents     Incident[]
   news          News[]
   documents     Document[]
+  vacancies     Vacancy[]
+  projects      Project[]
+  pageContents  PageContent[]
 
   @@map("users")
 }
@@ -118,6 +121,9 @@ model News {
   author   User @relation(fields: [authorId], references: [id])
   authorId Int  @map("author_id")
 
+  category   ContentCategory? @relation(fields: [categoryId], references: [id])
+  categoryId Int?             @map("category_id")
+
   @@map("news")
 }
 
@@ -137,9 +143,190 @@ model Document {
   author   User @relation(fields: [authorId], references: [id])
   authorId Int  @map("author_id")
 
+  contentCategory   ContentCategory? @relation(fields: [contentCategoryId], references: [id])
+  contentCategoryId Int?             @map("content_category_id")
+
   @@map("documents")
 }
 
+// Статистика штрафов (расширенная модель на основе Excel данных)
+model FineStatistics {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  date                    DateTime
+  year                    Int
+  violationsDetected      Int      @map("violations_detected")      // Количество зафиксированных нарушений
+  decreesIssued          Int      @map("decrees_issued")           // Количество вынесенных постановлений
+  finesImposed           Int      @map("fines_imposed")            // Сумма наложенных штрафов
+  finesCollected         Int      @map("fines_collected")          // Сумма взысканных штрафов
+  isPublic               Boolean  @default(true) @map("is_public") // Открытые данные для публичного доступа
+
+  @@map("fine_statistics")
+}
+
+// Статистика эвакуации (на основе Excel данных)
+model EvacuationStatistics {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  date                DateTime
+  year                Int
+  towTrucksOnLine     Int      @map("tow_trucks_on_line")    // Количество эвакуаторов на линии
+  callouts            Int      @map("callouts")              // Количество выездов
+  evacuationsCount    Int      @map("evacuations_count")     // Количество эвакуаций
+  impoundLotRevenue   Int      @map("impound_lot_revenue")   // Сумма поступлений по штрафстоянке
+  isPublic            Boolean  @default(true) @map("is_public")
+
+  @@map("evacuation_statistics")
+}
+
+// Маршруты эвакуаторов
+model EvacuationRoute {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  year        Int
+  month       String
+  route       String   // Описание маршрута
+  efficiency  Float?   // Эффективность маршрута (может быть рассчитана)
+  isActive    Boolean  @default(true) @map("is_active")
+
+  @@map("evacuation_routes")
+}
+
+// Заявки на эвакуацию
+model EvacuationRequest {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  address       String
+  vehicleType   String   @map("vehicle_type")
+  contactName   String   @map("contact_name")
+  contactPhone  String   @map("contact_phone")
+  estimatedCost Int?     @map("estimated_cost")
+  status        EvacuationRequestStatus @default(PENDING)
+  notes         String?
+
+  @@map("evacuation_requests")
+}
+
+// Расширенная модель светофоров (на основе реестра из Excel)
+model TrafficLightRegistry {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  registryNumber Int      @unique @map("registry_number") // № П/П из Excel
+  address        String   // Адрес
+  lightType      String   @map("light_type")             // Тип светофора (Т.1, Т.2, П.1 и т.д.)
+  installYear    Int      @map("install_year")           // Год установки
+  status         DeviceStatus @default(ACTIVE)
+  latitude       Float?
+  longitude      Float?
+  lastMaintenance DateTime? @map("last_maintenance")
+  isPublic       Boolean   @default(true) @map("is_public")
+
+  @@map("traffic_light_registry")
+}
+
+// Категории контента
+model ContentCategory {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  name        String   @unique
+  description String?
+  isPublic    Boolean  @default(true) @map("is_public")
+
+  news      News[]
+  documents Document[]
+
+  @@map("content_categories")
+}
+
+// Вакансии
+model Vacancy {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  title         String
+  description   String
+  requirements  String?
+  salary        String?
+  location      String?
+  employmentType String? @map("employment_type")
+  isActive      Boolean  @default(true) @map("is_active")
+  publishDate   DateTime? @map("publish_date")
+
+  author   User @relation(fields: [authorId], references: [id])
+  authorId Int  @map("author_id")
+
+  @@map("vacancies")
+}
+
+// Проекты
+model Project {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  title       String
+  description String
+  content     String?
+  imageUrl    String? @map("image_url")
+  status      ProjectStatus @default(PLANNING)
+  startDate   DateTime? @map("start_date")
+  endDate     DateTime? @map("end_date")
+  budget      Int?
+  isPublic    Boolean @default(true) @map("is_public")
+
+  author   User @relation(fields: [authorId], references: [id])
+  authorId Int  @map("author_id")
+
+  @@map("projects")
+}
+
+// Контактная информация
+model Contact {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  department String
+  address    String?
+  phone      String?
+  email      String?
+  workingHours String? @map("working_hours")
+  isPublic   Boolean @default(true) @map("is_public")
+
+  @@map("contacts")
+}
+
+// Текстовые блоки для страниц
+model PageContent {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  pageKey     String  @unique @map("page_key") // Уникальный ключ страницы
+  title       String?
+  content     String
+  isPublic    Boolean @default(true) @map("is_public")
+
+  author   User @relation(fields: [authorId], references: [id])
+  authorId Int  @map("author_id")
+
+  @@map("page_contents")
+}
+
+// Общая статистика (агрегированная)
 model Statistics {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now()) @map("created_at")
@@ -217,4 +404,20 @@ enum DocumentCategory {
   INSTRUCTION
   BUDGET
   OTHER
+}
+
+enum EvacuationRequestStatus {
+  PENDING
+  ASSIGNED
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}
+
+enum ProjectStatus {
+  PLANNING
+  IN_PROGRESS
+  COMPLETED
+  ON_HOLD
+  CANCELLED
 }

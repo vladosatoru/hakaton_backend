@@ -6,7 +6,7 @@ import {
 import { UserDto } from './user.dto'
 import { PrismaService } from '../prisma.service'
 import { returnUserObject } from './return-user.object'
-import { Prisma } from '@prisma/client'
+import { Prisma, UserRole } from '@prisma/client'
 import * as bcrypt from 'bcrypt'
 
 @Injectable()
@@ -35,9 +35,12 @@ export class UserService {
 		})
 	}
 
-	async create(data: { email: string; name: string; phone: string; password: string }) {
+	async create(data: { email: string; name: string; phone: string; password: string; role?: UserRole }) {
 		return this.prisma.user.create({
-			data,
+			data: {
+				...data,
+				role: data.role || UserRole.GUEST,
+			},
 		})
 	}
 

@@ -1,10 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common'
 import { PrismaService } from '../prisma.service'
-import {
-	CreateDocumentDto,
-	DocumentCategory,
-	UpdateDocumentDto,
-} from './documents.dto'
+import { CreateDocumentDto, DocumentCategory, UpdateDocumentDto } from './documents.dto'
 
 @Injectable()
 export class DocumentsService {
@@ -36,7 +32,7 @@ export class DocumentsService {
 
 	async findAll(category?: DocumentCategory) {
 		const where = category ? { category: category as any } : {}
-
+		
 		return this.prisma.document.findMany({
 			where,
 			include: {
@@ -117,13 +113,10 @@ export class DocumentsService {
 
 		return {
 			total,
-			byCategory: byCategory.reduce(
-				(acc, item) => {
-					acc[item.category] = item._count.category
-					return acc
-				},
-				{} as Record<string, number>,
-			),
+			byCategory: byCategory.reduce((acc, item) => {
+				acc[item.category] = item._count.category
+				return acc
+			}, {} as Record<string, number>),
 		}
 	}
 }

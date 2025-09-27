@@ -12,11 +12,7 @@ import {
 } from '@nestjs/common'
 import { OnlyAdminGuard } from '../auth/guards/admin.guard'
 import { JwtAuthGuard } from '../auth/guards/jwt.guard'
-import {
-	CreateDocumentDto,
-	DocumentCategory,
-	UpdateDocumentDto,
-} from './documents.dto'
+import { CreateDocumentDto, DocumentCategory, UpdateDocumentDto } from './documents.dto'
 import { DocumentsService } from './documents.service'
 
 @Controller('documents')
@@ -47,10 +43,7 @@ export class DocumentsController {
 
 	@Patch(':id')
 	@UseGuards(JwtAuthGuard, OnlyAdminGuard)
-	update(
-		@Param('id', ParseIntPipe) id: number,
-		@Body() updateDocumentDto: UpdateDocumentDto,
-	) {
+	update(@Param('id', ParseIntPipe) id: number, @Body() updateDocumentDto: UpdateDocumentDto) {
 		return this.documentsService.update(id, updateDocumentDto)
 	}
 

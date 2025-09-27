@@ -13,6 +13,10 @@ import { NewsModule } from './news/news.module'
 import { StatisticsModule } from './statistics/statistics.module'
 import { TrafficLightsModule } from './traffic-lights/traffic-lights.module'
 import { UserModule } from './user/user.module'
+import { FineStatisticsModule } from './fine-statistics/fine-statistics.module'
+import { EvacuationRequestsModule } from './evacuation-requests/evacuation-requests.module'
+import { TrafficLightRegistryModule } from './traffic-light-registry/traffic-light-registry.module'
+import { ImportExportModule } from './import-export/import-export.module'
 
 @Module({
 	imports: [
@@ -24,6 +28,10 @@ import { UserModule } from './user/user.module'
 		AuthModule,
 		UserModule,
 		StatisticsModule,
+		FineStatisticsModule,
+		EvacuationRequestsModule,
+		TrafficLightRegistryModule,
+		ImportExportModule,
 		TrafficLightsModule,
 		FinesModule,
 		EvacuationsModule,
